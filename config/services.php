@@ -40,4 +40,8 @@ return [
         ],
     ],
 
+    'sendgrid' => [
+        'api_key' => env('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'),
+    ],
+
 ];

@@ -27,8 +27,8 @@
 			maps: $(".google-map-container"),
 			mailchimp: $('.mailchimp-mailform'),
 			campaignMonitor: $('.campaign-mailform'),
-			rdMailForm: $(".rd-mailform"),
-			rdInputLabel: $(".form-label"),
+			rdMailForm: $(".rd-mailformed"),//stop the form
+			rdInputLabel: $(".form-*stoppedtheform*label"),//stop the form
 			regula: $("[data-constraints]"),
 			captcha: $('.recaptcha'),
 			owl: $(".owl-carousel"),

@@ -160,6 +160,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+        //sendgrid service provider
+        Sichikawa\LaravelSendgridDriver\SendgridTransportServiceProvider::class,
         /*
          * Package Service Providers...
          */

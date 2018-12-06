@@ -26,7 +26,7 @@ class PagesController extends Controller
         return view('pages.fikayo');
     }
 
-    public function contact(){
-        return view('pages.contact');
-    }
+    //public function contact(){
+        //return view('pages.contact');
+    //}
 }

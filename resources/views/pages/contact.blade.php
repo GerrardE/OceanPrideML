@@ -21,7 +21,9 @@
 </section>
 
 
+
 <section class="section-md bg-default">
+  
   <div class="container">
     <div class="row row-50">
       <div class="col-md-5 col-lg-4">
@@ -64,22 +66,30 @@
       </div>
       <div class="col-md-7 col-lg-8">
         <h4 class="heading-decorated">Get in Touch</h4>
+        
+        @include('includes.alert')
         <!-- RD Mailform-->
-        <form class="rd-mailform rd-mailform_style-1" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+        <form class="rd-mailform rd-mailform_style-1" data-form-output="form-output-global" data-form-type="contact" method="post" action="#">
+          @csrf
           <div class="form-wrap form-wrap_icon ">
+            <label for="contact-name">Your name</label>
             <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
-            <label class="form-label" for="contact-name">Your name</label>
           </div>
           <div class="form-wrap form-wrap_icon ">
+            <label for="contact-phone">Your phone number</label>
+            <input class="form-input" id="contact-phone" type="tel" name="telephone" data-constraints="@Required">
+          </div>
+          <div class="form-wrap form-wrap_icon ">
+            <label for="contact-email">Your e-mail</label>
             <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-            <label class="form-label" for="contact-email">Your e-mail</label>
           </div>
           <div class="form-wrap form-wrap_icon ">
+            <label for="contact-message">Your message</label>
             <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
-            <label class="form-label" for="contact-message">Your message</label>
           </div>
           <button class="button button-primary" type="submit">send</button>
         </form>
+        
       </div>
     </div>
   </div>

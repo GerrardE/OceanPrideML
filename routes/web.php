@@ -12,8 +12,11 @@
 */
 
 Route::get('/', 'PagesController@home');
+
 Route::get('/about', 'PagesController@about');
     Route::get('/laolu', 'PagesController@laolu');
     Route::get('/emmanuel', 'PagesController@emmanuel');
     Route::get('/fikayo', 'PagesController@fikayo');
-Route::get('/contact', 'PagesController@contact');
+
+Route::get('/contact', 'ContactController@contact');
+Route::post('/contact', 'ContactController@sendEmail');
