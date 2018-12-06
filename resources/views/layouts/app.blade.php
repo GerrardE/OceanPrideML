@@ -7,7 +7,7 @@
         <meta name="description" content="OceanPrideML LTD">
         <meta name="keywords" content="OceanPride Multy Links Limited, mining, business consulting, lead, gold, zinc, copper">
         <title>{{config('app.name', 'OceanPrideML | LTD')}}</title>
-        <link rel="icon" href="images/xxx.png" type="image/x-icon">
+        <link rel="icon" href="images/OPML Logo.png" type="image/x-icon">
         
 		    <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
